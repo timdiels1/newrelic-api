@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+		 colors="true">
+    <testsuites>
+        <testsuite name="New Relic API Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="tests/coverage" charset="UTF-8" yui="true" highlight="true"/>
+    </logging>
+    <php>
+        <env name="BASE_URL" value=""/>
+        <env name="API_KEY" value=""/>
+    </php>
+</phpunit>
