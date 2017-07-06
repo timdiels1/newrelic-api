@@ -57,7 +57,9 @@ class Newrelic {
       $params['form_params'] = $data;
     }
 
-    return $guzzle->request($method, $url, $params)->getBody();
+    $response = $guzzle->get($url, $params)->getBody();
+
+    return json_decode($response);
   }
 
   /**
