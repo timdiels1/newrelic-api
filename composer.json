@@ -1,7 +1,6 @@
 {
     "name": "timdiels1/newrelic-api",
     "description": "New Relic API v2 client library for PHP",
-    "version": "1.0.0",
     "type": "library",
     "license": "MIT",
     "keywords": ["new relic", "api"],

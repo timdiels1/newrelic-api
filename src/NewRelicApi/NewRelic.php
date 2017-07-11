@@ -78,8 +78,10 @@ class Newrelic {
 
   /**
    * Get a list of servers.
+   * @param array $data
+   * @return mixed
    */
-  public function getServers() {
-    return $this->buildRequest('servers.json');
+  public function getServers(array $data = []) {
+    return $this->buildRequest('servers.json', 'GET', $data);
   }
 }
